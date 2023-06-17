@@ -1,0 +1,7 @@
+In this program, we prompt the user to enter the filename, read it, and open the file using the fopen function. We then read the file line by line using fgets, incrementing the line count and character count for each line.
+
+To count the number of words, we iterate through each character in the line and check for word boundaries. We maintain a flag inWord that helps us detect when we are inside a word or outside. When we encounter whitespace (space, tab, or newline) and we were previously inside a word, we increment the word count.
+
+Finally, we close the file using fclose and print the results: the number of characters, words, and lines.
+
+Please note that this program assumes that each word is separated by whitespace characters. It may not handle special cases such as hyphenated words or words containing punctuation marks.
